@@ -29,7 +29,7 @@
     "build": "set NODE_ENV=production&& npx webpack --config webpack.config.js",
     "pack": "pkg",
     "lint": "eslint . --fix",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@capgo/standard-version": "^1.0.6",

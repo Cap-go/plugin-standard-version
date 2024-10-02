@@ -4,8 +4,8 @@ import { extname, join } from 'node:path'
 import standardVersion from '@capgo/standard-version'
 import command from '@capgo/standard-version/command'
 import merge from 'merge-deep'
-import * as ios from './ios'
 import * as android from './android'
+import * as ios from './ios'
 
 async function findByExtension(dir: string, ext: string): Promise<string[]> {
   const matchedFiles = []
