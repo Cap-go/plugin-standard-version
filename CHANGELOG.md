@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.8](https://github.com/Cap-go/capacitor-plugin-standard-version/compare/v1.1.6...v1.1.8) (2024-10-02)
+
+
+### Bug Fixes
+
+* allow hybrid plugin style ([e2a00c9](https://github.com/Cap-go/capacitor-plugin-standard-version/commit/e2a00c96e686b12a97c75841347c38ac36a6aefd))
+* for new ios ([b1bef51](https://github.com/Cap-go/capacitor-plugin-standard-version/commit/b1bef51b04d701ced139ce444b3bb2965d8825b4))
+* lint ([86adbc2](https://github.com/Cap-go/capacitor-plugin-standard-version/commit/86adbc26f980f42173621e260d6b94fd1eb4abc7))
+* lint ([1ed7dfe](https://github.com/Cap-go/capacitor-plugin-standard-version/commit/1ed7dfefc6a92faad9b1a26058ae3a5faada7322))
+* lint issue ([171873f](https://github.com/Cap-go/capacitor-plugin-standard-version/commit/171873f2ae2dbbb24317f2412de508a0986c9d49))
+* publish the latest ([de5c1ad](https://github.com/Cap-go/capacitor-plugin-standard-version/commit/de5c1ad253c74bf97c5223e90c823dd818618ce8))
+* test ci ([5f54576](https://github.com/Cap-go/capacitor-plugin-standard-version/commit/5f54576330abc365052f6f4397a8dfb8ca7d3dc7))
+
 ### [1.1.6](https://github.com/Cap-go/capacitor-plugin-standard-version/compare/v1.1.5...v1.1.6) (2023-01-12)
 
 
