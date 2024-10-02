@@ -31,11 +31,22 @@ async function findPathPlugin(): Promise<{ iosPath: string, androidPath: string 
   const newIosDir = './ios/Sources'
 
   if (existsSync(oldIosDir)) {
-    const files = await findByExtension(oldIosDir, 'm')
-    if (!files || !files[0]) {
-      throw new Error('File ending by .m not found in ios/Plugin, cannot guess your plugin name')
+    const mFiles = await findByExtension(oldIosDir, 'm')
+    const swiftFiles = await findByExtension(oldIosDir, 'swift')
+    let fileName = ''
+
+    if (mFiles && mFiles[0]) {
+      fileName = mFiles[0]
     }
-    const fileName = files[0]
+    else if (swiftFiles.length > 0) {
+      const pluginFile = swiftFiles.find(file => file.toLowerCase().endsWith('plugin'))
+      fileName = pluginFile || swiftFiles[0]
+    }
+
+    if (!fileName) {
+      throw new Error('No .m or Plugin.swift file found in ios/Plugin, cannot guess your plugin name')
+    }
+
     iosPath = join(oldIosDir, `${fileName}.swift`)
   }
   else if (existsSync(newIosDir)) {
