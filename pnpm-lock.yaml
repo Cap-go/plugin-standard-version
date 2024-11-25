@@ -26,7 +26,7 @@ importers:
         version: 11.0.4
       '@types/node':
         specifier: ^22.5.3
-        version: 22.9.0
+        version: 22.9.3
       eslint:
         specifier: ^9.9.1
         version: 9.15.0
@@ -50,7 +50,7 @@ importers:
         version: 9.5.1(typescript@5.6.3)(webpack@5.96.1)
       ts-node:
         specifier: ^10.9.2
-        version: 10.9.2(@types/node@22.9.0)(typescript@5.6.3)
+        version: 10.9.2(@types/node@22.9.3)(typescript@5.6.3)
       tsconfig-paths:
         specifier: ^4.2.0
         version: 4.2.0
@@ -362,8 +362,8 @@ packages:
   '@types/ms@0.7.34':
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
 
-  '@types/node@22.9.0':
-    resolution: {integrity: sha512-vuyHg81vvWA1Z1ELfvLko2c8f34gyA0zaic0+Rllc5lbCnbSyuvb2Oxpm6TAUAC/2xZN3QGqxBNggD1nNR2AfQ==}
+  '@types/node@22.9.3':
+    resolution: {integrity: sha512-F3u1fs/fce3FFk+DAxbxc78DF8x0cY09RRL8GnXLmkJ1jvx3TtPdWoTT5/NiYfI5ASqXBmfqJi9dZ3gxMx4lzw==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2941,7 +2941,7 @@ snapshots:
 
   '@types/adm-zip@0.5.5':
     dependencies:
-      '@types/node': 22.9.0
+      '@types/node': 22.9.3
 
   '@types/debug@4.1.12':
     dependencies:
@@ -2962,13 +2962,13 @@ snapshots:
   '@types/fs-extra@11.0.4':
     dependencies:
       '@types/jsonfile': 6.1.4
-      '@types/node': 22.9.0
+      '@types/node': 22.9.3
 
   '@types/json-schema@7.0.15': {}
 
   '@types/jsonfile@6.1.4':
     dependencies:
-      '@types/node': 22.9.0
+      '@types/node': 22.9.3
 
   '@types/mdast@4.0.4':
     dependencies:
@@ -2978,7 +2978,7 @@ snapshots:
 
   '@types/ms@0.7.34': {}
 
-  '@types/node@22.9.0':
+  '@types/node@22.9.3':
     dependencies:
       undici-types: 6.19.8
 
@@ -4226,7 +4226,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 22.9.0
+      '@types/node': 22.9.3
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -5308,14 +5308,14 @@ snapshots:
       typescript: 5.6.3
       webpack: 5.96.1(webpack-cli@5.1.4)
 
-  ts-node@10.9.2(@types/node@22.9.0)(typescript@5.6.3):
+  ts-node@10.9.2(@types/node@22.9.3)(typescript@5.6.3):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.11
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 22.9.0
+      '@types/node': 22.9.3
       acorn: 8.12.1
       acorn-walk: 8.3.3
       arg: 4.1.3
