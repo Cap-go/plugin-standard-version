@@ -26,7 +26,7 @@ importers:
         version: 11.0.4
       '@types/node':
         specifier: ^22.5.3
-        version: 22.15.3
+        version: 22.15.17
       eslint:
         specifier: ^9.9.1
         version: 9.25.1
@@ -50,7 +50,7 @@ importers:
         version: 9.5.2(typescript@5.8.3)(webpack@5.99.7)
       ts-node:
         specifier: ^10.9.2
-        version: 10.9.2(@types/node@22.15.3)(typescript@5.8.3)
+        version: 10.9.2(@types/node@22.15.17)(typescript@5.8.3)
       tsconfig-paths:
         specifier: ^4.2.0
         version: 4.2.0
@@ -154,8 +154,8 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
 
-  '@babel/parser@7.27.1':
-    resolution: {integrity: sha512-I0dZ3ZpCrJ1c04OqlNsQcKiZlsrXf/kkE4FXzID9rIOYICsAbA8mMDzhW/luRNAHdCNt7os/u8wenklZDlUVUQ==}
+  '@babel/parser@7.27.2':
+    resolution: {integrity: sha512-QYLs8299NA7WM/bZAdp+CviYYkVoYXlDW2rzliy3chxd1PQjej7JORuMJDJXJUb9g0TT+B99EwaVLKmX+sPXWw==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -377,8 +377,8 @@ packages:
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
 
-  '@types/node@22.15.3':
-    resolution: {integrity: sha512-lX7HFZeHf4QG/J7tBZqrCAXwz9J5RD56Y6MpP0eJkka8p+K0RY/yBTW7CYFJ4VGCclxqOLKmiGP5juQc6MKgcw==}
+  '@types/node@22.15.17':
+    resolution: {integrity: sha512-wIX2aSZL5FE+MR0JlvF87BNVrtFWf6AE6rxSE9X7OwnVvoyCQjpzSRJ+M87se/4QCkCiebQAqrJ0y6fwIyi7nw==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2773,7 +2773,7 @@ snapshots:
     dependencies:
       '@babel/types': 7.19.0
 
-  '@babel/parser@7.27.1':
+  '@babel/parser@7.27.2':
     dependencies:
       '@babel/types': 7.27.1
 
@@ -2989,7 +2989,7 @@ snapshots:
 
   '@types/adm-zip@0.5.5':
     dependencies:
-      '@types/node': 22.15.3
+      '@types/node': 22.15.17
 
   '@types/debug@4.1.12':
     dependencies:
@@ -3012,13 +3012,13 @@ snapshots:
   '@types/fs-extra@11.0.4':
     dependencies:
       '@types/jsonfile': 6.1.4
-      '@types/node': 22.15.3
+      '@types/node': 22.15.17
 
   '@types/json-schema@7.0.15': {}
 
   '@types/jsonfile@6.1.4':
     dependencies:
-      '@types/node': 22.15.3
+      '@types/node': 22.15.17
 
   '@types/mdast@4.0.4':
     dependencies:
@@ -3028,7 +3028,7 @@ snapshots:
 
   '@types/ms@2.1.0': {}
 
-  '@types/node@22.15.3':
+  '@types/node@22.15.17':
     dependencies:
       undici-types: 6.21.0
 
@@ -3122,7 +3122,7 @@ snapshots:
 
   '@vue/compiler-core@3.5.0':
     dependencies:
-      '@babel/parser': 7.27.1
+      '@babel/parser': 7.27.2
       '@vue/shared': 3.5.0
       entities: 4.5.0
       estree-walker: 2.0.2
@@ -3135,7 +3135,7 @@ snapshots:
 
   '@vue/compiler-sfc@3.5.0':
     dependencies:
-      '@babel/parser': 7.27.1
+      '@babel/parser': 7.27.2
       '@vue/compiler-core': 3.5.0
       '@vue/compiler-dom': 3.5.0
       '@vue/compiler-ssr': 3.5.0
@@ -4303,7 +4303,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 22.15.3
+      '@types/node': 22.15.17
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -5400,14 +5400,14 @@ snapshots:
       typescript: 5.8.3
       webpack: 5.99.7(webpack-cli@5.1.4)
 
-  ts-node@10.9.2(@types/node@22.15.3)(typescript@5.8.3):
+  ts-node@10.9.2(@types/node@22.15.17)(typescript@5.8.3):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.11
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 22.15.3
+      '@types/node': 22.15.17
       acorn: 8.12.1
       acorn-walk: 8.3.3
       arg: 4.1.3
