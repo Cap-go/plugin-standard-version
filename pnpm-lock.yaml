@@ -20,7 +20,7 @@ importers:
         version: 3.16.0(@typescript-eslint/utils@8.21.0(eslint@9.29.0)(typescript@5.8.3))(@vue/compiler-sfc@3.5.0)(eslint@9.29.0)(typescript@5.8.3)
       '@types/adm-zip':
         specifier: ^0.5.5
-        version: 0.5.5
+        version: 0.5.7
       '@types/fs-extra':
         specifier: ^11.0.4
         version: 11.0.4
@@ -353,8 +353,8 @@ packages:
   '@tsconfig/node16@1.0.4':
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
 
-  '@types/adm-zip@0.5.5':
-    resolution: {integrity: sha512-YCGstVMjc4LTY5uK9/obvxBya93axZOVOyf2GSUulADzmLhYE45u2nAssCs/fWBs1Ifq5Vat75JTPwd5XZoPJw==}
+  '@types/adm-zip@0.5.7':
+    resolution: {integrity: sha512-DNEs/QvmyRLurdQPChqq0Md4zGvPwHerAJYWk9l2jCbD1VPpnzRJorOdiq4zsw09NFbYnhfsoEhWtxIzXpn2yw==}
 
   '@types/debug@4.1.12':
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
@@ -2093,8 +2093,8 @@ packages:
     resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
     engines: {node: '>=4'}
 
-  postcss@8.5.5:
-    resolution: {integrity: sha512-d/jtm+rdNT8tpXuHY5MMtcbJFBkhXE6593XVR9UoGCH8jSFGci7jGvMGH5RYd5PBJW+00NZQt6gf7CbagJCrhg==}
+  postcss@8.5.6:
+    resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
   prebuild-install@7.1.1:
@@ -3029,7 +3029,7 @@ snapshots:
 
   '@tsconfig/node16@1.0.4': {}
 
-  '@types/adm-zip@0.5.5':
+  '@types/adm-zip@0.5.7':
     dependencies:
       '@types/node': 22.15.31
 
@@ -3186,7 +3186,7 @@ snapshots:
       '@vue/shared': 3.5.0
       estree-walker: 2.0.2
       magic-string: 0.30.17
-      postcss: 8.5.5
+      postcss: 8.5.6
       source-map-js: 1.2.1
 
   '@vue/compiler-ssr@3.5.0':
@@ -5056,7 +5056,7 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss@8.5.5:
+  postcss@8.5.6:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
