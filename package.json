@@ -35,7 +35,7 @@
     "merge-deep": "^3.0.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^5.2.0",
+    "@antfu/eslint-config": "^6.0.0",
     "@types/adm-zip": "^0.5.7",
     "@types/node": "^24.2.0",
     "eslint": "^9.32.0",
