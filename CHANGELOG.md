@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.84](https://github.com/Cap-go/capacitor-plugin-standard-version/compare/v1.1.83...v1.1.84) (2025-10-23)
+
+
+### Bug Fixes
+
+* remove dep dashboard ([b83c885](https://github.com/Cap-go/capacitor-plugin-standard-version/commit/b83c88551c6a7d8b7c4a63923fcb15d92cb8aef9))
+
 ### [1.1.83](https://github.com/Cap-go/capacitor-plugin-standard-version/compare/v1.1.82...v1.1.83) (2025-10-23)
 
 ### [1.1.82](https://github.com/Cap-go/capacitor-plugin-standard-version/compare/v1.1.81...v1.1.82) (2025-10-23)
