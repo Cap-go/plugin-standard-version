@@ -120,7 +120,7 @@ async function run() {
     const { iosPath, androidPath } = await findPathPlugin()
     baseConfig.bumpFiles[0].filename = androidPath
     baseConfig.bumpFiles[1].filename = iosPath
-    const finalConfig = merge(command.argv, baseConfig)
+    const finalConfig = merge(baseConfig, command.argv)
     await standardVersion(finalConfig)
   }
   catch (error) {
