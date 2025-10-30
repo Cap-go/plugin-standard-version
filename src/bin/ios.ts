@@ -1,4 +1,4 @@
-const regexIos = /private\slet\sPLUGIN_VERSION:\sString\s=\s"(.*)"/g
+const regexIos = /private\slet\spluginVersion:\sString\s=\s"(.*)"/g
 
 export function readVersion(contents) {
   const vString = contents.match(regexIos)
@@ -9,7 +9,7 @@ export function readVersion(contents) {
 export function writeVersion(contents, version) {
   const newContent = contents.replace(
     regexIos,
-    `private let PLUGIN_VERSION: String = "${version}"`,
+    `private let pluginVersion: String = "${version}"`,
   )
   return newContent
 }

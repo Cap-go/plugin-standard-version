@@ -17,12 +17,12 @@ Run `npx capacitor-plugin-standard-version` for update main version or `npx capa
 This package will automatically manage your changelog and the version number in 4 places:
 - package.json (version key)
 - package-lock.json (version key) optional
-- Your main iOS file (guessed) search for `private let PLUGIN_VERSION: String = "(.*)"`
-- your main android file (guessed) search for `private final String PLUGIN_VERSION = "(.*)"`
+- Your main iOS file (guessed) search for `private let pluginVersion: String = "(.*)"`
+- your main android file (guessed) search for `private final String pluginVersion = "(.*)"`
 
 If not present in your package add:
-in Android `private final String PLUGIN_VERSION = "1.2.3"`
-in iOS `private let PLUGIN_VERSION: String = "1.2.3"`
+in Android `private final String pluginVersion = "1.2.3"`
+in iOS `private let pluginVersion: String = "1.2.3"`
 
 Add in android then
 ```java
@@ -30,7 +30,7 @@ Add in android then
   public void getPluginVersion(final PluginCall call) {
     try {
       final JSObject ret = new JSObject();
-      ret.put("version", this.PLUGIN_VERSION);
+      ret.put("version", this.pluginVersion);
       call.resolve(ret);
     } catch (final Exception e) {
       call.reject("Could not get plugin version", e);
@@ -40,7 +40,7 @@ Add in android then
 And in IOS
 ```swift
     @objc func getPluginVersion(_ call: CAPPluginCall) {
-        call.resolve(["version": self.PLUGIN_VERSION])
+        call.resolve(["version": self.pluginVersion])
     }
 ```
 Add a method `getNativeVersion()` in native who will return the version, that useful for Capgo auto-update context when dev want to be certain they don't make a breaking change in production.
