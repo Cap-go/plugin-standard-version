@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.6](https://github.com/Cap-go/capacitor-plugin-standard-version/compare/v2.0.5...v2.0.6) (2025-12-09)
+
+
+### Bug Fixes
+
+* **android:** improve regex for Gradle namespace matching ([72e4b88](https://github.com/Cap-go/capacitor-plugin-standard-version/commit/72e4b88bf78e07ee2b17a319a9febbea2fb6003b))
+
 ### [2.0.5](https://github.com/Cap-go/capacitor-plugin-standard-version/compare/v2.0.4...v2.0.5) (2025-12-09)
 
 
