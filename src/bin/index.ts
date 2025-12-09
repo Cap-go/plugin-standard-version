@@ -70,13 +70,14 @@ async function findPathPlugin(): Promise<{ iosPath: string, androidPath: string 
   // Android path
   const fileAndroid = './android/build.gradle'
   const contentsAndroid = readFileSync(fileAndroid, 'utf8')
-  const resultMatchAndroid = contentsAndroid.match(/namespace\s"(.*)"/g)
+  // Support both old (namespace "...") and new (namespace = "...") Gradle syntax
+  const resultMatchAndroid = contentsAndroid.match(/namespace\s*=?\s*"(.*)"/g)
   if (!resultMatchAndroid || !resultMatchAndroid[0]) {
     throw new Error('Namespace not found in android/build.gradle, cannot guess your plugin name')
   }
   const resultAndroid
     = resultMatchAndroid && resultMatchAndroid[0]
-      ? resultMatchAndroid[0].replace(/namespace "(.*)"/g, '$1')
+      ? resultMatchAndroid[0].replace(/namespace\s*=?\s*"(.*)"/g, '$1')
       : null
   const foldersPath = resultAndroid.split('.').join('/')
   const fileName = iosPath.split('/').pop()?.replace('.swift', '')
