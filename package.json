@@ -40,7 +40,7 @@
     "@types/node": "^24.9.1",
     "eslint": "^9.38.0",
     "git-format-staged": "^3.1.1",
-    "globals": "^16.4.0",
+    "globals": "^17.0.0",
     "husky": "^9.1.7",
     "nodemon": "^3.1.10",
     "pkg": "^5.8.1",
