@@ -8,11 +8,11 @@ All config from .versionrc, .versionrc.json or .versionrc.js are supported
 
 ## Install
 
-`npm i capacitor-plugin-standard-version`
+`bun add -D @capgo/capacitor-plugin-standard-version`
 
 ## Usage
 
-Run `npx capacitor-plugin-standard-version` for update main version or `npx capacitor-plugin-standard-version --prerelease alpha` for alpha release for dev branch.
+Run `bunx capacitor-plugin-standard-version` for update main version or `bunx capacitor-plugin-standard-version --prerelease alpha` for alpha release for dev branch.
 
 This package will automatically manage your changelog and the version number in 4 places:
 - package.json (version key)
@@ -63,20 +63,23 @@ jobs:
     name: Bump version and create changelog with standard version
     steps:
       - name: Check out
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           token: '${{ secrets.PERSONAL_ACCESS_TOKEN }}'
+      - uses: oven-sh/setup-bun@v2
+      - name: Install dependencies
+        run: bun i
       - name: Git config
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
       - name: Create bump and changelog
         if: github.ref == 'refs/heads/main'
-        run: npx capacitor-plugin-standard-version
+        run: bunx capacitor-plugin-standard-version
       - name: Create bump and changelog
         if: github.ref != 'refs/heads/main'
-        run: npx capacitor-plugin-standard-version --prerelease alpha
+        run: bunx capacitor-plugin-standard-version --prerelease alpha
       - name: Push to origin
         run: |
           CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)

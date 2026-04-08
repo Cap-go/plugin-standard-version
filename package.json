@@ -1,5 +1,5 @@
 {
-  "name": "capacitor-plugin-standard-version",
+  "name": "@capgo/capacitor-plugin-standard-version",
   "version": "2.0.20",
   "description": "Default standard-version config for capacitor plugin",
   "author": "Martin Donadieu <martindonadieu@gmail.com>",
@@ -23,11 +23,13 @@
     "capacitor-plugin-standard-version": "dist/index.js"
   },
   "scripts": {
-    "dev": "set NODE_ENV=development&& npx webpack --config webpack.config.js",
+    "dev": "NODE_ENV=development bunx webpack --config webpack.config.js",
     "no-debug": "node dist/index.js",
-    "build": "set NODE_ENV=production&& npx webpack --config webpack.config.js",
+    "build": "NODE_ENV=production bunx webpack --config webpack.config.js",
     "pack": "pkg",
     "lint": "eslint . --fix",
+    "version:bump": "bunx commit-and-tag-version",
+    "version:bump:alpha": "bunx commit-and-tag-version --prerelease alpha",
     "prepare": "husky"
   },
   "dependencies": {
