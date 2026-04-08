@@ -1,18 +1,24 @@
-# capacitor-standard-version
+# @capgo/capacitor-plugin-standard-version
 
-Default config for standard-version for capacitor app
+Default config for `standard-version` in Capacitor plugins.
 
-use it at builtin replacement of https://www.npmjs.com/package/standard-version
+Use it as a built-in replacement for https://www.npmjs.com/package/standard-version.
 
-All config from .versionrc, .versionrc.json or .versionrc.js are supported
+All config from `.versionrc`, `.versionrc.json`, or `.versionrc.js` is supported.
 
 ## Install
 
-`npm i capacitor-plugin-standard-version`
+`npm i -D @capgo/capacitor-plugin-standard-version`
+
+The legacy unscoped package name `capacitor-plugin-standard-version` now lives under the `@capgo` npm org. The CLI binary name stays `capacitor-plugin-standard-version`.
 
 ## Usage
 
-Run `npx capacitor-plugin-standard-version` for update main version or `npx capacitor-plugin-standard-version --prerelease alpha` for alpha release for dev branch.
+Run `npx capacitor-plugin-standard-version` after installing it locally, or `npx @capgo/capacitor-plugin-standard-version` to execute it directly from npm.
+
+For a stable release use `npx capacitor-plugin-standard-version`.
+
+For an alpha prerelease use `npx capacitor-plugin-standard-version --prerelease alpha`.
 
 This package will automatically manage your changelog and the version number in 4 places:
 - package.json (version key)
@@ -47,7 +53,7 @@ Add a method `getNativeVersion()` in native who will return the version, that us
 Add `getJsVersion()` in JS code to allow user to check the JS version, who can be updated by updater.
 Add `checkVersionMatch()` in JS code to allow user to check if the JS and native version match.
 
-Exemple of Github action to do it on every commit in `main` and `development`
+Example GitHub Action to run it on every commit to `main` and `development`.
 
 ```yml
 on:
@@ -73,10 +79,10 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
       - name: Create bump and changelog
         if: github.ref == 'refs/heads/main'
-        run: npx capacitor-plugin-standard-version
+        run: npx @capgo/capacitor-plugin-standard-version
       - name: Create bump and changelog
         if: github.ref != 'refs/heads/main'
-        run: npx capacitor-plugin-standard-version --prerelease alpha
+        run: npx @capgo/capacitor-plugin-standard-version --prerelease alpha
       - name: Push to origin
         run: |
           CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
@@ -84,4 +90,4 @@ jobs:
           git pull $remote_repo $CURRENT_BRANCH
           git push $remote_repo HEAD:$CURRENT_BRANCH --follow-tags --tags
 ```
-For this action to work you have to add as env var `PERSONAL_ACCESS_TOKEN` you can create it by following this doc https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+For this action to work, store `PERSONAL_ACCESS_TOKEN` in your repository or organization GitHub Actions Secrets settings and reference it in the workflow as `${{ secrets.PERSONAL_ACCESS_TOKEN }}`. You can create the token by following this guide: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token and add it to GitHub Actions Secrets by following this guide: https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions

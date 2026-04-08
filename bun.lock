@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "capacitor-plugin-standard-version",
+      "name": "@capgo/capacitor-plugin-standard-version",
       "dependencies": {
         "commit-and-tag-version": "^12.6.0",
         "merge-deep": "^3.0.3",
