@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/Cap-go/plugin-standard-version/compare/v2.0.48...v3.0.0) (2026-11-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* commit-and-tag-version v13 requires Node 22+. Run release
+workflows and this CLI on Node 22 or newer.
+
+Co-authored-by: Martin DONADIEU <martindonadieu@gmail.com>
+
+### Features
+
+* require Node 22+ with commit-and-tag-version v13 ([bd3069c](https://github.com/Cap-go/plugin-standard-version/commit/bd3069cb2474690ff97a37e25e507d310e32a315))
+
+
+### Bug Fixes
+
+* **deps:** update dependency commit-and-tag-version to v13 ([587c413](https://github.com/Cap-go/plugin-standard-version/commit/587c413221f3e42e26c2f1c83d121777b397b7cf))
+* import commit-and-tag-version command via the v13 ESM path ([320c87e](https://github.com/Cap-go/plugin-standard-version/commit/320c87e8929a06b6d52f55ba43636b44f0e4d7f6))
+
 ### [2.0.48](https://github.com/Cap-go/plugin-standard-version/compare/v2.0.47...v2.0.48) (2026-11-13)
 
 ### [2.0.47](https://github.com/Cap-go/plugin-standard-version/compare/v2.0.46...v2.0.47) (2026-11-10)
