@@ -26,6 +26,9 @@
   "bin": {
     "capacitor-plugin-standard-version": "dist/index.js"
   },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "set NODE_ENV=development&& npx webpack --config webpack.config.js",
     "no-debug": "node dist/index.js",
@@ -35,7 +38,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "commit-and-tag-version": "^12.6.0",
+    "commit-and-tag-version": "^13.0.0",
     "merge-deep": "^3.0.3"
   },
   "devDependencies": {

@@ -6,6 +6,10 @@ Use it as a built-in replacement for https://www.npmjs.com/package/standard-vers
 
 All config from `.versionrc`, `.versionrc.json`, or `.versionrc.js` is supported.
 
+## Requirements
+
+Node.js **22+** is required (`commit-and-tag-version` v13 raises the minimum Node version).
+
 ## Install
 
 `npm i -D @capgo/capacitor-plugin-standard-version`
