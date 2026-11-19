@@ -2,7 +2,9 @@ const regexAndroid = /private\sfinal\sString\spluginVersion\s=\s"(.*)";/g
 
 export function readVersion(contents) {
   const vString = contents.match(regexAndroid)
-  const version = vString && vString[0] ? vString[0].replace(regexAndroid, '$1') : null
+  const version = vString && vString[0]
+    ? vString[0].replace(regexAndroid, '$1')
+    : null
   return version
 }
 
