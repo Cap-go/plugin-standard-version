@@ -1,6 +1,6 @@
 {
   "name": "@capgo/capacitor-plugin-standard-version",
-  "version": "2.0.46",
+  "version": "2.0.48",
   "description": "Default standard-version config for Capacitor plugins",
   "author": "Martin Donadieu <martindonadieu@gmail.com>",
   "license": "MIT",
@@ -39,7 +39,7 @@
     "merge-deep": "^3.0.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^5.4.1",
+    "@antfu/eslint-config": "^10.0.0",
     "@types/adm-zip": "^0.6.0",
     "@types/node": "^26.0.0",
     "eslint": "^10.0.0",
