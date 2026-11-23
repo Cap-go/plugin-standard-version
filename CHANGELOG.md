@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/Cap-go/plugin-standard-version/compare/v3.0.0...v3.0.1) (2026-11-23)
+
 ## [3.0.0](https://github.com/Cap-go/plugin-standard-version/compare/v2.0.48...v3.0.0) (2026-11-19)
 
 
